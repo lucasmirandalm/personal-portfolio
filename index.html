@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucas Miranda — Fullstack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="icon" href="./assets/images/icon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
+
+    <nav>
+        <a href="#" class="nav-logo">Lucas <span>Miranda</span></a>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="#about" data-en="About" data-pt="Sobre">About</a></li>
+                <li><a href="#projects" data-en="Projects" data-pt="Projetos">Projects</a></li>
+                <li><a href="#experience" data-en="Experience" data-pt="Experiência">Experience</a></li>
+                <li><a href="#stack" data-en="Stack" data-pt="Tecnologias">Stack</a></li>
+                <li><a href="#contact" class="nav-cta" data-en="Contact" data-pt="Contato">Contact</a></li>
+            </ul>
+            <button id="lang-toggle">PT</button>
+        </div>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-inner">
+            <a href="#about" class="mobile-nav-link" data-en="About" data-pt="Sobre">About</a>
+            <a href="#projects" class="mobile-nav-link" data-en="Projects" data-pt="Projetos">Projects</a>
+            <a href="#experience" class="mobile-nav-link" data-en="Experience" data-pt="Experiência">Experience</a>
+            <a href="#stack" class="mobile-nav-link" data-en="Stack" data-pt="Tecnologias">Stack</a>
+            <div class="mobile-menu-divider"></div>
+            <a href="#contact" class="mobile-nav-link mobile-cta" data-en="Contact" data-pt="Contato">Contact</a>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            <span data-en="Available for new projects" data-pt="Disponível para novos projetos">Available for new
+                projects</span>
+        </div>
+        <h1 data-en="<em>Python</em> Developer" data-pt="Desenvolvedor <em>Python</em>"><em>Python</em> Developer</h1>
+        <p data-en="I build complete web applications — from database to interface. Passionate about clean code, APIs, and products that truly work."
+            data-pt="Construo aplicações web completas — do banco de dados à interface. Apaixonado por código limpo, APIs e produtos que funcionam de verdade.">
+            I build complete web applications — from database to interface. Passionate about clean code, robust APIs,
+            and products that truly work.
+        </p>
+        <div class="hero-actions">
+            <a href="#projects" class="btn-primary">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+                </svg>
+                <span data-en="View projects" data-pt="Ver projetos">View projects</span>
+            </a>
+            <a href="#contact" class="btn-ghost" data-en="Get in touch" data-pt="Entrar em contato">Get in touch</a>
+        </div>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <div class="hero-stat-val">2+</div>
+                <div class="hero-stat-label" data-en="Years of experience" data-pt="Anos de experiência">Years of
+                    experience</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-val">8</div>
+                <div class="hero-stat-label" data-en="Projects delivered" data-pt="Projetos entregues">Projects
+                    delivered</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-val">Django</div>
+                <div class="hero-stat-label" data-en="Main Backend" data-pt="Backend principal">Main Backend</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-val">Vue 3</div>
+                <div class="hero-stat-label" data-en="Main Frontend" data-pt="Frontend principal">Main Frontend</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="about-layout">
+                <div class="about-text fade-up">
+                    <div class="section-header">
+                        <div class="section-label" data-en="About me" data-pt="Sobre mim">About me</div>
+                        <h2 class="section-title" data-en="Code that solves real problems"
+                            data-pt="Código que resolve problemas reais">Code that solves real problems</h2>
+                    </div>
+                    <div>
+                        <div class="lang-en">
+                            <p>I am a fullstack developer focused on <strong>Python/Django</strong> for the backend and
+                                <strong>Vue.js</strong> for the frontend. I enjoy building complete systems — from
+                                database modeling to the interface users interact with.
+                            </p>
+                            <p>I have experience with <strong>Django REST Framework</strong> for APIs, JWT
+                                authentication, and best practices like Service Layer and automated testing. On the
+                                front, I work with Vue 3, Composition API, Pinia, and Vue Router.</p>
+                        </div>
+                        <div class="lang-pt" style="display:none">
+                            <p>Sou desenvolvedor fullstack com foco em <strong>Python/Django</strong> no backend e
+                                <strong>Vue.js</strong> no frontend. Gosto de construir sistemas completos — desde a
+                                modelagem do banco até a interface que o usuário toca.
+                            </p>
+                            <p>Tenho experiência com <strong>Django REST Framework</strong> para APIs, autenticação com
+                                JWT, e boas práticas como Service Layer e testes automatizados. No front, trabalho com
+                                Vue 3, Composition API, Pinia e Vue Router.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card fade-up">
+                    <div class="about-card-title" data-en="Technical Stack" data-pt="Stack técnica">Technical Stack
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-group-label">Backend</div>
+                        <div class="skill-pills">
+                            <span class="skill-pill skill-pill--green">Python</span>
+                            <span class="skill-pill skill-pill--green">Django</span>
+                            <span class="skill-pill skill-pill--green">FastAPI</span>
+                            <span class="skill-pill skill-pill--green">PostgreSQL</span>
+                            <span class="skill-pill skill-pill--green">JWT Auth</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-group-label">Frontend</div>
+                        <div class="skill-pills">
+                            <span class="skill-pill skill-pill--blue">HTML5</span>
+                            <span class="skill-pill skill-pill--blue">CSS3</span>          
+                            <span class="skill-pill skill-pill--blue">JavaScript</span>
+                            <span class="skill-pill skill-pill--blue">Vue 3</span>                                 
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-group-label" data-en="Tools" data-pt="Ferramentas">Ferramentas</div>
+                        <div class="skill-pills">
+                            <span class="skill-pill skill-pill--purple">Git</span>
+                            <span class="skill-pill skill-pill--purple">Docker</span>
+                            <span class="skill-pill skill-pill--purple">Vite</span>
+                            <span class="skill-pill skill-pill--purple">Linux</span>
+                            <span class="skill-pill skill-pill--purple">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <div class="section-header fade-up">
+                <div class="section-label" data-en="Projects" data-pt="Projetos">Projects</div>
+                <h2 class="section-title" data-en="What I've built" data-pt="O que eu construí">What I've built</h2>
+                <p class="section-sub" data-en="Real projects with code available on GitHub"
+                    data-pt="Projetos reais com código disponível no GitHub">Real projects with code available on GitHub
+                </p>
+            </div>
+            <div class="projects-grid fade-up">
+                <div class="project-card">
+                    <div class="project-preview">
+                        <svg viewBox="0 0 480 270" xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="xMidYMid slice">
+                            <rect width="480" height="270" fill="#0a0a0a" />
+                            <text x="240" y="140" font-family="Inter,sans-serif" font-size="20" fill="#4ade80"
+                                text-anchor="middle">WhiteHatting Preview</text>
+                        </svg>
+                    </div>
+                    <div class="project-card-body">
+                        <div class="project-card-top">
+                            <span class="project-name">WhiteHatting</span>
+                            <span class="project-badge project-badge--featured" data-en="Featured"
+                                data-pt="Destaque">Featured</span>
+                        </div>
+                        <p class="project-desc"
+                            data-en="Bug bounty platform connecting companies to security hunters. Full dashboard and discussion threads."
+                            data-pt="Plataforma de bug bounty conectando empresas a hunters de segurança. Dashboard completo e threads de discussão.">
+                            Bug bounty platform connecting companies to security hunters. Full dashboard and discussion
+                            threads.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Vue 3</span>
+                            <span class="project-tag">Django</span>
+                            <span class="project-tag">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link project-link--primary">Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="experience">
+    <div class="container">
+        <div class="section-header fade-up">
+            <div class="section-label" data-pt="Experiência" data-en="Experience">Experiência</div>
+            <h2 class="section-title" data-pt="Trajetória" data-en="Journey">Trajetória</h2>
+        </div>
+
+        <div class="exp-list fade-up">
+
+            <div class="exp-item">
+                <div>
+                    <div class="exp-period">2028 — atual</div>
+                    <div class="exp-period-current">
+                        <span class="exp-period-dot"></span>
+                        <span data-pt="Atual" data-en="Current">Atual</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="exp-role" data-pt="Aprimoramento contínuo em tecnologia"
+                        data-en="Continuous improvement in technology">
+                        Aprimoramento contínuo em tecnologia
+                    </div>
+                    <div class="exp-company" data-pt="Estudos independentes" data-en="Independent studies">
+                        Estudos independentes
+                    </div>
+                    <p class="exp-desc"
+                        data-pt="Aprofundamento em desenvolvimento backend e arquitetura de sistemas. Estudo de boas práticas, padrões de projeto, escalabilidade e novas tecnologias do ecossistema web."
+                        data-en="Deepening knowledge in backend development and system architecture. Studying best practices, design patterns, scalability, and modern web technologies.">
+                        Aprofundamento em desenvolvimento backend e arquitetura de sistemas...
+                    </p>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div>
+                    <div class="exp-period">2023 — 2027</div>
+                </div>
+                <div>
+                    <div class="exp-role" data-pt="Bacharelado em Sistemas de Informação"
+                        data-en="Bachelor's Degree in Information Systems">
+                        Bacharelado em Sistemas de Informação
+                    </div>
+                    <div class="exp-company" data-pt="Ensino superior" data-en="Higher education">
+                        Ensino superior
+                    </div>
+                    <p class="exp-desc"
+                        data-pt="Formação em fundamentos da computação, engenharia de software, banco de dados e desenvolvimento de sistemas. Participação em projetos acadêmicos e desenvolvimento de soluções práticas."
+                        data-en="Education in computer science fundamentals, software engineering, databases, and systems development. Participation in academic projects and practical solutions.">
+                        Formação em fundamentos da computação, engenharia de software...
+                    </p>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div>
+                    <div class="exp-period">2019 — 2021</div>
+                </div>
+                <div>
+                    <div class="exp-role" data-pt="Técnico em Informática (Ensino Médio)"
+                        data-en="Technical Degree in IT (High School)">
+                        Técnico em Informática (Ensino Médio)
+                    </div>
+                    <div class="exp-company" data-pt="Formação técnica" data-en="Technical education">
+                        Formação técnica
+                    </div>
+                    <p class="exp-desc"
+                        data-pt="Introdução à programação, lógica computacional e desenvolvimento web. Criação dos primeiros projetos práticos e base sólida em tecnologia."
+                        data-en="Introduction to programming, computational logic, and web development. Building first practical projects and a solid foundation in technology.">
+                        Introdução à programação, lógica computacional...
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <section id="stack">
+        <div class="container">
+            <div class="section-header fade-up">
+                <div class="section-label" data-pt="Stack" data-en="Stack">
+                    Stack
+                </div>
+                <h2 class="section-title" data-pt="Tecnologias que uso" data-en="Technologies I use">
+                    Tecnologias que uso
+                </h2>
+                <p class="section-sub" data-pt="Nível de experiência em cada tecnologia"
+                    data-en="Experience level in each technology">
+                    Nível de experiência em cada tecnologia
+                </p>
+            </div>
+
+            <div class="stack-grid fade-up">
+                <div class="stack-card">
+                    <div class="stack-name">Python</div>
+                    <div class="stack-desc" data-pt="Linguagem principal. Scripts, automações e backend."
+                        data-en="Main language. Scripts, automation, and backend.">
+                        Linguagem principal. Scripts, automações e backend.
+                    </div>
+                    <div class="stack-bar-wrap">
+                        <div class="stack-bar" style="width:100%"></div>
+                    </div>
+                </div>
+
+                <div class="stack-card">
+                    <div class="stack-name">Django + DRF</div>
+                    <div class="stack-desc" data-pt="APIs REST, autenticação, ORM, serializers, testes."
+                        data-en="REST APIs, authentication, ORM, serializers, testing.">
+                        APIs REST, autenticação, ORM, serializers, testes.
+                    </div>
+                    <div class="stack-bar-wrap">
+                        <div class="stack-bar" style="width:100%"></div>
+                    </div>
+                </div>
+
+                <div class="stack-card">
+                    <div class="stack-name">Vue 3</div>
+                    <div class="stack-desc" data-pt="Composition API, Pinia, Vue Router, componentes."
+                        data-en="Composition API, Pinia, Vue Router, components.">
+                        Composition API, Pinia, Vue Router, componentes.
+                    </div>
+                    <div class="stack-bar-wrap">
+                        <div class="stack-bar" style="width:100%"></div>
+                    </div>
+                </div>
+
+                <div class="stack-card">
+                    <div class="stack-name">PostgreSQL</div>
+                    <div class="stack-desc" data-pt="Modelagem relacional, queries, relacionamentos."
+                        data-en="Relational modeling, queries, relationships.">
+                        Modelagem relacional, queries, relacionamentos.
+                    </div>
+                    <div class="stack-bar-wrap">
+                        <div class="stack-bar" style="width:100%"></div>
+                    </div>
+                </div>
+
+                <div class="stack-card">
+                    <div class="stack-name">JavaScript / CSS</div>
+                    <div class="stack-desc" data-pt="Fundamentos sólidos. CSS sem framework externo."
+                        data-en="Solid fundamentals. CSS without external frameworks.">
+                        Fundamentos sólidos. CSS sem framework externo.
+                    </div>
+                    <div class="stack-bar-wrap">
+                        <div class="stack-bar" style="width:100%"></div>
+                    </div>
+                </div>
+
+                <div class="stack-card">
+                    <div class="stack-name">Docker + Git</div>
+                    <div class="stack-desc" data-pt="Containers, docker-compose, versionamento."
+                        data-en="Containers, docker-compose, version control.">
+                        Containers, docker-compose, versionamento.
+                    </div>
+                    <div class="stack-bar-wrap">
+                        <div class="stack-bar" style="width:100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="section-header fade-up">
+                <div class="section-label" data-en="Contact" data-pt="Contato">Contact</div>
+                <h2 class="section-title" data-en="Let's talk" data-pt="Vamos conversar">Let's talk</h2>
+            </div>
+            <div class="contact-links-only fade-up">
+                <p class="contact-intro"
+                    data-en="I'm open to job opportunities, freelance work, and interesting projects. Reach out via your preferred channel."
+                    data-pt="Estou aberto a oportunidades de emprego, freelas e projetos interessantes. Escolha o canal de sua preferência.">
+                    I'm open to job opportunities, freelance work, and interesting projects. Reach out via your
+                    preferred channel.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:lucasmsaluno@gmail.com" class="contact-link">
+                        <div class="contact-link-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-link-label">E-mail</div>
+                            <div class="contact-link-val">lucasmsaluno@gmail.com</div>
+                        </div>
+                        <svg class="contact-link-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/lucasmirandalm" target="_blank" class="contact-link">
+                        <div class="contact-link-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-link-label">GitHub</div>
+                            <div class="contact-link-val">github.com/lucasmirandalm</div>
+                        </div>
+                        <svg class="contact-link-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/lucasmirandalm" target="_blank" class="contact-link">
+                        <div class="contact-link-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-link-label">LinkedIn</div>
+                            <div class="contact-link-val">linkedin.com/in/lucasmirandalm</div>
+                        </div>
+                        <svg class="contact-link-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="text-align: center;">
+        <span
+            class="footer-copy" 
+            data-en="© 2025 — Python Developer"  
+            data-pt="© 2025 — Desenvolvedor Python">
+            © 2025 — Python Developer
+        </span>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
